@@ -10,6 +10,14 @@ ruleTester.run('no-identical-title', rule, {
     [
       'describe("describe", function() {',
       '   it("it", function() {});',
+      '   context("context", function() {',
+      '       it("it", function() {});',
+      '    });',
+      '});',
+    ].join('\n'),
+    [
+      'describe("describe", function() {',
+      '   it("it", function() {});',
       '});',
     ].join('\n'),
     [
