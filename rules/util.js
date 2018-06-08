@@ -83,6 +83,11 @@ const describeAliases = Object.assign(Object.create(null), {
   'describe.skip': true,
   fdescribe: true,
   xdescribe: true,
+  context: true,
+  'context.only': true,
+  'context.skip': true,
+  fcontext: true,
+  xcontext: true,
 });
 
 const testCaseNames = Object.assign(Object.create(null), {
